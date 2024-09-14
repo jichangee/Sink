@@ -1,5 +1,5 @@
 <script setup>
-import { GmailIcon, TelegramIcon, BloggerIcon, XIcon, MastodonIcon, GitHubIcon } from 'vue3-simple-icons'
+import { BloggerIcon, GitHubIcon, GmailIcon, MastodonIcon, TelegramIcon, XIcon } from 'vue3-simple-icons'
 
 const email = ref(null)
 onMounted(() => {
@@ -8,16 +8,18 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="text-gray-700 bg-white md:pt-6">
+  <section class="md:pt-6">
     <div class="container flex flex-col items-center py-8 mx-auto sm:flex-row">
       <a
         href="/"
-        class="text-xl font-black leading-none text-gray-900 select-none logo"
+        class="text-xl font-black leading-none text-gray-900 select-none dark:text-gray-100 logo"
+        title="Sink"
       >Sink</a>
       <a
         class="mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:mt-0"
         href="https://html.zone"
         target="_blank"
+        title="HTML.ZONE"
       >
         &copy; {{ new Date().getFullYear() }} Products of HTML.ZONE
       </a>
@@ -59,7 +61,7 @@ onMounted(() => {
         </a>
 
         <a
-          href="https://x.com/ccbikai"
+          href="https://x.com/0xKaiBi"
           target="_blank"
           title="Twitter"
           class="text-gray-400 hover:text-gray-500"
